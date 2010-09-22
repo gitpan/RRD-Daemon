@@ -39,6 +39,6 @@ use constant RRD_FN     => catfile test::DATA_DIR, 'sda.rrd';
 
 use constant TEST_COUNT => 2;
 
-test_capture([ PRRD, fetch => RRD_FN,
+test_capture([ $^X, PRRD, fetch => RRD_FN,
                      -s => '20100715 06:00',
                      -e => '20100715 07:00' ], FETCH_EXPECT, 'fetch');

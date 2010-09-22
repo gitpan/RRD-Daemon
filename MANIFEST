@@ -1,6 +1,7 @@
 bin/prrd
 bin/rrdm
 Build.PL
+Changes
 data/sda.rrd
 lib/RRD/Daemon.pm
 lib/RRD/Daemon/Plugin.pm

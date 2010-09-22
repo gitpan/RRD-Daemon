@@ -7,6 +7,7 @@ my $build =
                      license       => 'perl',
                      requires      => 
                        +{ 'perl'                      => '5.10.0',
+                          'IPC::System::Simple'       => '1.18',
                           'Log::Log4perl'             => '1.23',
                           'Log::Dispatch::FileRotate' => '1.19',
                           'Params::Attr'              => '1.00',

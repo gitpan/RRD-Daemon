@@ -69,4 +69,4 @@ use constant RRD_FN     => catfile test::DATA_DIR, 'sda.rrd';
 use constant TEST_COUNT => 2;
 
 (my $expect = RAWINFO_EXPECT) =~ s/__FILENAME__/RRD_FN/eg;
-test_capture([ PRRD, rawinfo => RRD_FN ], $expect, 'rawinfo');
+test_capture([ $^X, PRRD, rawinfo => RRD_FN ], $expect, 'rawinfo');

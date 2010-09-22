@@ -1,6 +1,6 @@
 ---
 name: RRD-Daemon
-version: 1.00
+version: 1.01
 author:
   - 'M J Pearce <fluffy@cpan.org>'
 abstract: perl daemon rrd collector
@@ -8,6 +8,7 @@ license: perl
 resources:
   license: http://dev.perl.org/licenses/
 requires:
+  IPC::System::Simple: 1.18
   Log::Dispatch::FileRotate: 1.19
   Log::Log4perl: 1.23
   Params::Attr: 1.00
@@ -19,7 +20,7 @@ configure_requires:
 provides:
   RRD::Daemon:
     file: lib/RRD/Daemon.pm
-    version: 1.00
+    version: 1.01
   RRD::Daemon::Plugin:
     file: lib/RRD/Daemon/Plugin.pm
   RRD::Daemon::Plugin::HDDTemp:
